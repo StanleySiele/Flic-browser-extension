@@ -1,0 +1,130 @@
+:root {
+  --hunter-green: #002522;
+  --castle-black: #0a0806;
+  --green-120: #001413;
+  --green-95: #193330;
+  --green-80: #33514e;
+  --green-60: #667c7a;
+  --green-40: #99a8a7;
+  --green-20: #ccd3d3;
+  --green-5: #f1f6f6;
+
+  --trophy-gold: #d08e39;
+  --gold-120: #b6792b;
+  --gold-80: #d9a561;
+  --gold-60: #e3bb88;
+  --gold-40: #ecd2b0;
+  --gold-20: #f6e8d7;
+  --gold-5: #faf8f1;
+  --white: #faf8f1;
+
+  --error: #e84855;
+  --error-20: #e9cfcf;
+
+  --success: #1b998b;
+  --success-20: #d2e9e8;
+
+  --attention: #eeb218;
+  --attention-20: #faf0cf;
+
+  --info: #5448c8;
+  --info-20: #d4e9f0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  width: 384px;
+  height: 594px;
+  margin: 0;
+  font-family: "Segment", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    sans-serif;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  background-color: var(--hunter-green);
+  scrollbar-width: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  all: unset;
+  cursor: text;
+}
+
+ul,
+li {
+  all: unset;
+  list-style-type: none;
+}
+
+form {
+  all: inherit;
+  padding: 0;
+}
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -font-smoothing: antialiased;
+}
+
+.standard_width {
+  width: 352px;
+}
+
+.standard_width_padded {
+  width: 352px;
+  padding: 0px 8px;
+  box-sizing: border-box;
+}
+
+.center_horizontal {
+  margin: 0 auto;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.serif_header {
+  color: #fefefc;
+  font-family: "Quincy CF";
+  font-size: 38px;
+  font-weight: 400;
+  padding: unset;
+  margin: unset;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  line-height: 27px;
+  margin-top: -5.5px;
+}
+
+.label {
+  color: var(--green-40);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}

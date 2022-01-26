@@ -1,0 +1,17 @@
+{
+  "name": "@tallyho/provider-bridge-shared",
+  "version": "0.0.1",
+  "description": "Flic's Web3 Bridge by Tally Community",
+  "main": "index.ts",
+  "repository": "git@github.com:thesis/tally-extension.git",
+  "author": "Greg Nagy <gergo.nagy@tally.cash>",
+  "license": "GPL-3.0",
+  "keywords": [
+    "ethereum",
+    "bitcoin",
+    "cryptocurrency",
+    "wallet",
+    "web3",
+    "dapp"
+  ]
+}

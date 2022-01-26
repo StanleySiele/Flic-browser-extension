@@ -1,0 +1,41 @@
+{
+  "name": "Flic",
+  "version": "0.1.0",
+  "description": "Flic's secure web3 Wallet",
+  "homepage_url": "https://jackjay.io",
+  "author": "https://jackjay.io",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "content_security_policy": "object-src 'self'; script-src 'self';",
+  "web_accessible_resources": ["*.js", "*.json"],
+  "content_scripts": [
+    {
+      "matches": ["file://*/*", "http://localhost/*", "https://*/*"],
+      "js": ["provider-bridge.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+Shift+T",
+        "mac": "Alt+Shift+T",
+        "chromeos": "Alt+Shift+T",
+        "linux": "Alt+Shift+T"
+      }
+    }
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_title": "Flic",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["alarms", "storage", "unlimitedStorage", "activeTab"],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js", "background-ui.js"]
+  }
+}
